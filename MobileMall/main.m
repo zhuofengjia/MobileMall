@@ -1,9 +1,9 @@
 //
 //  main.m
-//  MobileMall
+//  SoftBestWine
 //
-//  Created by ChenYuanFang on 13-4-27.
-//  Copyright (c) 2013年 ChenYuanFang. All rights reserved.
+//  Created by Chenyuanfang on 13-4-8.
+//  Copyright (c) 2013年 softbest1. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

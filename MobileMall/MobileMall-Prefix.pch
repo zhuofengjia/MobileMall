@@ -1,6 +1,6 @@
 //
-// Prefix header for all source files of the 'MobileMall' target in the 'MobileMall' project
-//
+// Prefix header for all source files of the 'SoftBestWine' target in the 'SoftBestWine' project
+// 这个类中所有的引用和方法都是项目全局的
 
 #import <Availability.h>
 
@@ -9,6 +9,14 @@
 #endif
 
 #ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+#import "ComponentsFactory.h"
 #endif
+
+//获得屏幕高度
+#define MY_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+//安全释放
+#define TT_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }
