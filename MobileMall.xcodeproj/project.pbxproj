@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE778312172B9C8D00E2A5CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE778311172B9C8D00E2A5CD /* UIKit.framework */; };
+		AE778314172B9C8D00E2A5CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE778313172B9C8D00E2A5CD /* Foundation.framework */; };
+		AE778316172B9C8D00E2A5CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE778315172B9C8D00E2A5CD /* CoreGraphics.framework */; };
+		AE77831C172B9C8D00E2A5CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE77831A172B9C8D00E2A5CD /* InfoPlist.strings */; };
+		AE77831E172B9C8D00E2A5CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE77831D172B9C8D00E2A5CD /* main.m */; };
+		AE778322172B9C8D00E2A5CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE778321172B9C8D00E2A5CD /* AppDelegate.m */; };
+		AE778324172B9C8D00E2A5CD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AE778323172B9C8D00E2A5CD /* Default.png */; };
+		AE778326172B9C8D00E2A5CD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE778325172B9C8D00E2A5CD /* Default@2x.png */; };
+		AE778328172B9C8D00E2A5CD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE778327172B9C8D00E2A5CD /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE77830E172B9C8D00E2A5CD /* MobileMall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileMall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE778311172B9C8D00E2A5CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE778313172B9C8D00E2A5CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE778315172B9C8D00E2A5CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE778319172B9C8D00E2A5CD /* MobileMall-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobileMall-Info.plist"; sourceTree = "<group>"; };
+		AE77831B172B9C8D00E2A5CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE77831D172B9C8D00E2A5CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE77831F172B9C8D00E2A5CD /* MobileMall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileMall-Prefix.pch"; sourceTree = "<group>"; };
+		AE778320172B9C8D00E2A5CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE778321172B9C8D00E2A5CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE778323172B9C8D00E2A5CD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AE778325172B9C8D00E2A5CD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AE778327172B9C8D00E2A5CD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE77830B172B9C8D00E2A5CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE778312172B9C8D00E2A5CD /* UIKit.framework in Frameworks */,
+				AE778314172B9C8D00E2A5CD /* Foundation.framework in Frameworks */,
+				AE778316172B9C8D00E2A5CD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE778305172B9C8D00E2A5CD = {
+			isa = PBXGroup;
+			children = (
+				AE778317172B9C8D00E2A5CD /* MobileMall */,
+				AE778310172B9C8D00E2A5CD /* Frameworks */,
+				AE77830F172B9C8D00E2A5CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE77830F172B9C8D00E2A5CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE77830E172B9C8D00E2A5CD /* MobileMall.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE778310172B9C8D00E2A5CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE778311172B9C8D00E2A5CD /* UIKit.framework */,
+				AE778313172B9C8D00E2A5CD /* Foundation.framework */,
+				AE778315172B9C8D00E2A5CD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE778317172B9C8D00E2A5CD /* MobileMall */ = {
+			isa = PBXGroup;
+			children = (
+				AE778320172B9C8D00E2A5CD /* AppDelegate.h */,
+				AE778321172B9C8D00E2A5CD /* AppDelegate.m */,
+				AE778318172B9C8D00E2A5CD /* Supporting Files */,
+			);
+			path = MobileMall;
+			sourceTree = "<group>";
+		};
+		AE778318172B9C8D00E2A5CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE778319172B9C8D00E2A5CD /* MobileMall-Info.plist */,
+				AE77831A172B9C8D00E2A5CD /* InfoPlist.strings */,
+				AE77831D172B9C8D00E2A5CD /* main.m */,
+				AE77831F172B9C8D00E2A5CD /* MobileMall-Prefix.pch */,
+				AE778323172B9C8D00E2A5CD /* Default.png */,
+				AE778325172B9C8D00E2A5CD /* Default@2x.png */,
+				AE778327172B9C8D00E2A5CD /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE77830D172B9C8D00E2A5CD /* MobileMall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE77832B172B9C8D00E2A5CD /* Build configuration list for PBXNativeTarget "MobileMall" */;
+			buildPhases = (
+				AE77830A172B9C8D00E2A5CD /* Sources */,
+				AE77830B172B9C8D00E2A5CD /* Frameworks */,
+				AE77830C172B9C8D00E2A5CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileMall;
+			productName = MobileMall;
+			productReference = AE77830E172B9C8D00E2A5CD /* MobileMall.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE778306172B9C8D00E2A5CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = ChenYuanFang;
+			};
+			buildConfigurationList = AE778309172B9C8D00E2A5CD /* Build configuration list for PBXProject "MobileMall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE778305172B9C8D00E2A5CD;
+			productRefGroup = AE77830F172B9C8D00E2A5CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE77830D172B9C8D00E2A5CD /* MobileMall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE77830C172B9C8D00E2A5CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE77831C172B9C8D00E2A5CD /* InfoPlist.strings in Resources */,
+				AE778324172B9C8D00E2A5CD /* Default.png in Resources */,
+				AE778326172B9C8D00E2A5CD /* Default@2x.png in Resources */,
+				AE778328172B9C8D00E2A5CD /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE77830A172B9C8D00E2A5CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE77831E172B9C8D00E2A5CD /* main.m in Sources */,
+				AE778322172B9C8D00E2A5CD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE77831A172B9C8D00E2A5CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE77831B172B9C8D00E2A5CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE778329172B9C8D00E2A5CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE77832A172B9C8D00E2A5CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE77832C172B9C8D00E2A5CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileMall/MobileMall-Prefix.pch";
+				INFOPLIST_FILE = "MobileMall/MobileMall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AE77832D172B9C8D00E2A5CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileMall/MobileMall-Prefix.pch";
+				INFOPLIST_FILE = "MobileMall/MobileMall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE778309172B9C8D00E2A5CD /* Build configuration list for PBXProject "MobileMall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE778329172B9C8D00E2A5CD /* Debug */,
+				AE77832A172B9C8D00E2A5CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE77832B172B9C8D00E2A5CD /* Build configuration list for PBXNativeTarget "MobileMall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE77832C172B9C8D00E2A5CD /* Debug */,
+				AE77832D172B9C8D00E2A5CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE778306172B9C8D00E2A5CD /* Project object */;
+}
