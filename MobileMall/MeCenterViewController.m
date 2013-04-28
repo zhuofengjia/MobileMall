@@ -7,9 +7,7 @@
 //
 
 #import "MeCenterViewController.h"
-
-//#import "TestMyNavViewController.h"
-//#import "TestTestViewController.h"
+#import "MyCollectViewController.h"
 #import "EGOImageView.h"
 
 @interface MeCenterViewController ()
@@ -162,20 +160,54 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    switch (indexPath.row) {
+        case 0:
+        {
+        
+        }
+            break;
+        case 1:
+        {
+            
+        }
+            break;
+        case 2:
+        {
+            
+        }
+            break;
+        case 3:
+        {
+            MyCollectViewController *myCollectVC=[[MyCollectViewController alloc]init];
+            [self.navigationController pushViewController:myCollectVC animated:NO];
+            [myCollectVC release];
+        }
+            break;
+        case 4:
+        {
+            
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 #pragma mark end
 
 -(void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBar.hidden=YES;
+//    AppDelegate *app=(AppDelegate *)[[UIApplication sharedApplication]delegate];
+//    [app.myTabBar hide];
     AppDelegate *myApp=(AppDelegate *)[[UIApplication sharedApplication] delegate];
     myApp.myTabBar.imgView.image=[UIImage imageNamed:@"TabBar_BG.png"];
     myApp.myTabBar.slideBg.image=[UIImage imageNamed:@"TabBar_press.png"];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
-    self.navigationController.navigationBar.hidden=NO;
+    //self.navigationController.navigationBar.hidden=NO;
+//    AppDelegate *app=(AppDelegate *)[[UIApplication sharedApplication]delegate];
+//    [app.myTabBar show];
 }
 
 - (void)didReceiveMemoryWarning

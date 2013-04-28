@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE29B38F172BC41E004D4FF2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE29B38E172BC41E004D4FF2 /* LoginViewController.m */; };
+		AE29B392172BC481004D4FF2 /* RegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE29B391172BC481004D4FF2 /* RegisteredViewController.m */; };
 		AE778312172B9C8D00E2A5CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE778311172B9C8D00E2A5CD /* UIKit.framework */; };
 		AE778314172B9C8D00E2A5CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE778313172B9C8D00E2A5CD /* Foundation.framework */; };
 		AE778316172B9C8D00E2A5CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE778315172B9C8D00E2A5CD /* CoreGraphics.framework */; };
@@ -119,9 +121,36 @@
 		AE778422172BA18200E2A5CD /* ad16.png in Resources */ = {isa = PBXBuildFile; fileRef = AE77841A172BA18200E2A5CD /* ad16.png */; };
 		AE778423172BA18200E2A5CD /* ad17.png in Resources */ = {isa = PBXBuildFile; fileRef = AE77841B172BA18200E2A5CD /* ad17.png */; };
 		AE778424172BA18200E2A5CD /* ad18.png in Resources */ = {isa = PBXBuildFile; fileRef = AE77841C172BA18200E2A5CD /* ad18.png */; };
+		AEE51E1F172CA92C001055CF /* MyCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE51E1E172CA92C001055CF /* MyCollectViewController.m */; };
+		AEE51E35172CC8B5001055CF /* addCartBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E20172CC8B5001055CF /* addCartBtn.png */; };
+		AEE51E36172CC8B5001055CF /* addColectBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E21172CC8B5001055CF /* addColectBtn.png */; };
+		AEE51E37172CC8B5001055CF /* addMyCartBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E22172CC8B5001055CF /* addMyCartBtn.png */; };
+		AEE51E38172CC8B5001055CF /* cancelColectBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E23172CC8B5001055CF /* cancelColectBtn.png */; };
+		AEE51E39172CC8B5001055CF /* closeBt.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E24172CC8B5001055CF /* closeBt.png */; };
+		AEE51E3A172CC8B5001055CF /* goColectBg.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E25172CC8B5001055CF /* goColectBg.png */; };
+		AEE51E3B172CC8B5001055CF /* goColectBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E26172CC8B5001055CF /* goColectBtn.png */; };
+		AEE51E3C172CC8B5001055CF /* goMyColectBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E27172CC8B5001055CF /* goMyColectBtn.png */; };
+		AEE51E3D172CC8B5001055CF /* halfStar.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E28172CC8B5001055CF /* halfStar.png */; };
+		AEE51E3E172CC8B5001055CF /* member_NoBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E29172CC8B5001055CF /* member_NoBtn.png */; };
+		AEE51E3F172CC8B5001055CF /* member_NomalBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E2A172CC8B5001055CF /* member_NomalBtn.png */; };
+		AEE51E40172CC8B5001055CF /* member_pressBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E2B172CC8B5001055CF /* member_pressBtn.png */; };
+		AEE51E41172CC8B5001055CF /* noStar.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E2C172CC8B5001055CF /* noStar.png */; };
+		AEE51E42172CC8B5001055CF /* oneStar.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E2D172CC8B5001055CF /* oneStar.png */; };
+		AEE51E43172CC8B5001055CF /* promotions_NoBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E2E172CC8B5001055CF /* promotions_NoBtn.png */; };
+		AEE51E44172CC8B5001055CF /* promotions_NomalBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E2F172CC8B5001055CF /* promotions_NomalBtn.png */; };
+		AEE51E45172CC8B5001055CF /* promotions_PressBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E30172CC8B5001055CF /* promotions_PressBtn.png */; };
+		AEE51E46172CC8B5001055CF /* retail_NoBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E31172CC8B5001055CF /* retail_NoBtn.png */; };
+		AEE51E47172CC8B5001055CF /* retail_NomalBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E32172CC8B5001055CF /* retail_NomalBtn.png */; };
+		AEE51E48172CC8B5001055CF /* retail_PressBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E33172CC8B5001055CF /* retail_PressBtn.png */; };
+		AEE51E49172CC8B5001055CF /* shoppingNoBg.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE51E34172CC8B5001055CF /* shoppingNoBg.png */; };
+		AEE51E4C172D075B001055CF /* SiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE51E4B172D075B001055CF /* SiteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE29B38D172BC41E004D4FF2 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		AE29B38E172BC41E004D4FF2 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		AE29B390172BC481004D4FF2 /* RegisteredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisteredViewController.h; sourceTree = "<group>"; };
+		AE29B391172BC481004D4FF2 /* RegisteredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisteredViewController.m; sourceTree = "<group>"; };
 		AE77830E172B9C8D00E2A5CD /* MobileMall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileMall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE778311172B9C8D00E2A5CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AE778313172B9C8D00E2A5CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -264,6 +293,31 @@
 		AE77841A172BA18200E2A5CD /* ad16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ad16.png; path = testImage/ad16.png; sourceTree = SOURCE_ROOT; };
 		AE77841B172BA18200E2A5CD /* ad17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ad17.png; path = testImage/ad17.png; sourceTree = SOURCE_ROOT; };
 		AE77841C172BA18200E2A5CD /* ad18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ad18.png; path = testImage/ad18.png; sourceTree = SOURCE_ROOT; };
+		AEE51E1D172CA92C001055CF /* MyCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectViewController.h; sourceTree = "<group>"; };
+		AEE51E1E172CA92C001055CF /* MyCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectViewController.m; sourceTree = "<group>"; };
+		AEE51E20172CC8B5001055CF /* addCartBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addCartBtn.png; path = Image/addCartBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E21172CC8B5001055CF /* addColectBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addColectBtn.png; path = Image/addColectBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E22172CC8B5001055CF /* addMyCartBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addMyCartBtn.png; path = Image/addMyCartBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E23172CC8B5001055CF /* cancelColectBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancelColectBtn.png; path = Image/cancelColectBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E24172CC8B5001055CF /* closeBt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = closeBt.png; path = Image/closeBt.png; sourceTree = SOURCE_ROOT; };
+		AEE51E25172CC8B5001055CF /* goColectBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = goColectBg.png; path = Image/goColectBg.png; sourceTree = SOURCE_ROOT; };
+		AEE51E26172CC8B5001055CF /* goColectBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = goColectBtn.png; path = Image/goColectBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E27172CC8B5001055CF /* goMyColectBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = goMyColectBtn.png; path = Image/goMyColectBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E28172CC8B5001055CF /* halfStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = halfStar.png; path = Image/halfStar.png; sourceTree = SOURCE_ROOT; };
+		AEE51E29172CC8B5001055CF /* member_NoBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = member_NoBtn.png; path = Image/member_NoBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E2A172CC8B5001055CF /* member_NomalBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = member_NomalBtn.png; path = Image/member_NomalBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E2B172CC8B5001055CF /* member_pressBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = member_pressBtn.png; path = Image/member_pressBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E2C172CC8B5001055CF /* noStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noStar.png; path = Image/noStar.png; sourceTree = SOURCE_ROOT; };
+		AEE51E2D172CC8B5001055CF /* oneStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = oneStar.png; path = Image/oneStar.png; sourceTree = SOURCE_ROOT; };
+		AEE51E2E172CC8B5001055CF /* promotions_NoBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = promotions_NoBtn.png; path = Image/promotions_NoBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E2F172CC8B5001055CF /* promotions_NomalBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = promotions_NomalBtn.png; path = Image/promotions_NomalBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E30172CC8B5001055CF /* promotions_PressBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = promotions_PressBtn.png; path = Image/promotions_PressBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E31172CC8B5001055CF /* retail_NoBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retail_NoBtn.png; path = Image/retail_NoBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E32172CC8B5001055CF /* retail_NomalBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retail_NomalBtn.png; path = Image/retail_NomalBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E33172CC8B5001055CF /* retail_PressBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retail_PressBtn.png; path = Image/retail_PressBtn.png; sourceTree = SOURCE_ROOT; };
+		AEE51E34172CC8B5001055CF /* shoppingNoBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shoppingNoBg.png; path = Image/shoppingNoBg.png; sourceTree = SOURCE_ROOT; };
+		AEE51E4A172D075B001055CF /* SiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteViewController.h; sourceTree = "<group>"; };
+		AEE51E4B172D075B001055CF /* SiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +335,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE29B38C172BC3E2004D4FF2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AE29B38D172BC41E004D4FF2 /* LoginViewController.h */,
+				AE29B38E172BC41E004D4FF2 /* LoginViewController.m */,
+				AE29B390172BC481004D4FF2 /* RegisteredViewController.h */,
+				AE29B391172BC481004D4FF2 /* RegisteredViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		AE778305172B9C8D00E2A5CD = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +407,27 @@
 		AE77832E172B9D8500E2A5CD /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				AEE51E20172CC8B5001055CF /* addCartBtn.png */,
+				AEE51E21172CC8B5001055CF /* addColectBtn.png */,
+				AEE51E22172CC8B5001055CF /* addMyCartBtn.png */,
+				AEE51E23172CC8B5001055CF /* cancelColectBtn.png */,
+				AEE51E24172CC8B5001055CF /* closeBt.png */,
+				AEE51E25172CC8B5001055CF /* goColectBg.png */,
+				AEE51E26172CC8B5001055CF /* goColectBtn.png */,
+				AEE51E27172CC8B5001055CF /* goMyColectBtn.png */,
+				AEE51E28172CC8B5001055CF /* halfStar.png */,
+				AEE51E29172CC8B5001055CF /* member_NoBtn.png */,
+				AEE51E2A172CC8B5001055CF /* member_NomalBtn.png */,
+				AEE51E2B172CC8B5001055CF /* member_pressBtn.png */,
+				AEE51E2C172CC8B5001055CF /* noStar.png */,
+				AEE51E2D172CC8B5001055CF /* oneStar.png */,
+				AEE51E2E172CC8B5001055CF /* promotions_NoBtn.png */,
+				AEE51E2F172CC8B5001055CF /* promotions_NomalBtn.png */,
+				AEE51E30172CC8B5001055CF /* promotions_PressBtn.png */,
+				AEE51E31172CC8B5001055CF /* retail_NoBtn.png */,
+				AEE51E32172CC8B5001055CF /* retail_NomalBtn.png */,
+				AEE51E33172CC8B5001055CF /* retail_PressBtn.png */,
+				AEE51E34172CC8B5001055CF /* shoppingNoBg.png */,
 				AE77832F172B9DA400E2A5CD /* allLeft.png */,
 				AE778330172B9DA400E2A5CD /* allNav.png */,
 				AE778331172B9DA400E2A5CD /* allRight.png */,
@@ -440,6 +526,7 @@
 		AE7783B8172B9DC900E2A5CD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				AE29B38C172BC3E2004D4FF2 /* Login */,
 				AE778410172BA02C00E2A5CD /* Filter */,
 				AE7783C0172B9EC300E2A5CD /* More */,
 				AE7783BF172B9EB700E2A5CD /* MeCenter */,
@@ -500,6 +587,8 @@
 			children = (
 				AE77840A172BA00F00E2A5CD /* MeCenterViewController.h */,
 				AE77840B172BA00F00E2A5CD /* MeCenterViewController.m */,
+				AEE51E1D172CA92C001055CF /* MyCollectViewController.h */,
+				AEE51E1E172CA92C001055CF /* MyCollectViewController.m */,
 			);
 			name = MeCenter;
 			sourceTree = "<group>";
@@ -509,6 +598,8 @@
 			children = (
 				AE77840D172BA02400E2A5CD /* MoreViewController.h */,
 				AE77840E172BA02400E2A5CD /* MoreViewController.m */,
+				AEE51E4A172D075B001055CF /* SiteViewController.h */,
+				AEE51E4B172D075B001055CF /* SiteViewController.m */,
 			);
 			name = More;
 			sourceTree = "<group>";
@@ -714,6 +805,27 @@
 				AE778422172BA18200E2A5CD /* ad16.png in Resources */,
 				AE778423172BA18200E2A5CD /* ad17.png in Resources */,
 				AE778424172BA18200E2A5CD /* ad18.png in Resources */,
+				AEE51E35172CC8B5001055CF /* addCartBtn.png in Resources */,
+				AEE51E36172CC8B5001055CF /* addColectBtn.png in Resources */,
+				AEE51E37172CC8B5001055CF /* addMyCartBtn.png in Resources */,
+				AEE51E38172CC8B5001055CF /* cancelColectBtn.png in Resources */,
+				AEE51E39172CC8B5001055CF /* closeBt.png in Resources */,
+				AEE51E3A172CC8B5001055CF /* goColectBg.png in Resources */,
+				AEE51E3B172CC8B5001055CF /* goColectBtn.png in Resources */,
+				AEE51E3C172CC8B5001055CF /* goMyColectBtn.png in Resources */,
+				AEE51E3D172CC8B5001055CF /* halfStar.png in Resources */,
+				AEE51E3E172CC8B5001055CF /* member_NoBtn.png in Resources */,
+				AEE51E3F172CC8B5001055CF /* member_NomalBtn.png in Resources */,
+				AEE51E40172CC8B5001055CF /* member_pressBtn.png in Resources */,
+				AEE51E41172CC8B5001055CF /* noStar.png in Resources */,
+				AEE51E42172CC8B5001055CF /* oneStar.png in Resources */,
+				AEE51E43172CC8B5001055CF /* promotions_NoBtn.png in Resources */,
+				AEE51E44172CC8B5001055CF /* promotions_NomalBtn.png in Resources */,
+				AEE51E45172CC8B5001055CF /* promotions_PressBtn.png in Resources */,
+				AEE51E46172CC8B5001055CF /* retail_NoBtn.png in Resources */,
+				AEE51E47172CC8B5001055CF /* retail_NomalBtn.png in Resources */,
+				AEE51E48172CC8B5001055CF /* retail_PressBtn.png in Resources */,
+				AEE51E49172CC8B5001055CF /* shoppingNoBg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,6 +864,10 @@
 				AE77840C172BA00F00E2A5CD /* MeCenterViewController.m in Sources */,
 				AE77840F172BA02400E2A5CD /* MoreViewController.m in Sources */,
 				AE778413172BA03D00E2A5CD /* FilterViewController.m in Sources */,
+				AE29B38F172BC41E004D4FF2 /* LoginViewController.m in Sources */,
+				AE29B392172BC481004D4FF2 /* RegisteredViewController.m in Sources */,
+				AEE51E1F172CA92C001055CF /* MyCollectViewController.m in Sources */,
+				AEE51E4C172D075B001055CF /* SiteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,6 +980,7 @@
 				AE77832D172B9C8D00E2A5CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

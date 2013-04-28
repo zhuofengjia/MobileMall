@@ -108,14 +108,14 @@
 //    
 //    float historyHeight=(historyArr.count*44<=MY_HEIGHT-80-54-20)? historyArr.count*44 : MY_HEIGHT-80-54-20;
     
-    hotTable=[[UITableView alloc]initWithFrame:CGRectMake(5, 80, 310, MY_HEIGHT-80-54-20) style:UITableViewStylePlain];
+    hotTable=[[UITableView alloc]initWithFrame:CGRectMake(5, 80, 310, MY_HEIGHT-80-52-20) style:UITableViewStylePlain];
     hotTable.delegate=self;
     hotTable.dataSource=self;
     //hotTable.separatorStyle=UITableViewCellSeparatorStyleNone;
     [self.view addSubview:hotTable];
     [self setExtraCellLineHidden:hotTable];
     
-    historyTable=[[UITableView alloc]initWithFrame:CGRectMake(5, 80, 310, MY_HEIGHT-80-54-20) style:UITableViewStylePlain];
+    historyTable=[[UITableView alloc]initWithFrame:CGRectMake(5, 80, 310, MY_HEIGHT-80-52-20) style:UITableViewStylePlain];
     historyTable.delegate=self;
     historyTable.dataSource=self;
     //historyTable.separatorStyle=UITableViewCellSeparatorStyleNone;

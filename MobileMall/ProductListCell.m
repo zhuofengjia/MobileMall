@@ -37,7 +37,7 @@
         salesLab.font=[UIFont systemFontOfSize:13];
         [self.contentView addSubview:salesLab];
         
-        UIImageView *arrow=[[UIImageView alloc]initWithFrame:CGRectMake(300, 42, 7, 11)];
+        UIImageView *arrow=[[UIImageView alloc]initWithFrame:CGRectMake(305, 42, 7, 11)];
         arrow.image=[UIImage imageNamed:@"jiantou.png"];
         [self.contentView addSubview:arrow];
         [arrow release];

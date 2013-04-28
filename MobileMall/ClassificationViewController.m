@@ -35,7 +35,7 @@
 }
 
 -(void)layouMyTable{
-    mainTable=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, MY_HEIGHT-44-54-20) style:UITableViewStylePlain];
+    mainTable=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, MY_HEIGHT-44-52-20) style:UITableViewStylePlain];
     mainTable.delegate=self;
     mainTable.dataSource=self;
     //mainTable.separatorStyle=UITableViewCellSeparatorStyleNone;

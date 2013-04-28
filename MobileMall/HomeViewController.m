@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "UIColumnViewCell.h"
+#import "MyCollectViewController.h"
 
 #define WIDTH_OF_IMAGE 320
 #define HEIGHT_OF_IMAGE 128
@@ -125,7 +126,7 @@
 
 -(void)layoutMyMainScrollView{
 //    NSLog(@">>>>>>>>>>>>%f",MY_HEIGHT);
-    mainView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 44, 320, MY_HEIGHT-44-54)];
+    mainView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 44, 320, MY_HEIGHT-44-52)];
     mainView.delegate=self;
     mainView.scrollEnabled=YES;
     
@@ -330,6 +331,9 @@
             break;
         case 5:
             NSLog(@"去我的收藏");
+            MyCollectViewController *myCollect=[[MyCollectViewController alloc]init];
+            [self.navigationController pushViewController:myCollect animated:NO];
+            [myCollect release];
             break;
         case 6:
             NSLog(@"去浏览记录");

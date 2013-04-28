@@ -83,18 +83,18 @@
     //	UIView *tabBarBackGroundView = [[UIView alloc] initWithFrame:self.tabBar.frame];
     //	tabBarBackGroundView.backgroundColor = [UIColor grayColor];
 	
-    tempView=[[UIView alloc] initWithFrame:CGRectMake(0, MY_HEIGHT-54, 320, 54)];
+    tempView=[[UIView alloc] initWithFrame:CGRectMake(0, MY_HEIGHT-52, 320, 52)];
 	imgView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"TabBar_BG.png"]];
-    imgView.frame=CGRectMake(0, 0, 384, 54);
+    imgView.frame=CGRectMake(0, 0, 384, 52);
     [tempView addSubview:imgView];
     [imgView release];
     
-    BgScrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, 54)];
+    BgScrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, 52)];
     BgScrollView.delegate=self;
     //BgScrollView.clipsToBounds = YES;
 	BgScrollView.scrollEnabled = YES;
     //BgScrollView.pagingEnabled =YES;
-    BgScrollView.contentSize=CGSizeMake(384, 54);
+    BgScrollView.contentSize=CGSizeMake(384, 52);
     BgScrollView.bounces=NO;
     BgScrollView.showsHorizontalScrollIndicator=NO;
     BgScrollView.showsVerticalScrollIndicator=NO;
@@ -114,7 +114,7 @@
     [tempView addSubview:rightArrow];
     
     slideBg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TabBar_press.png"]];
-    slideBg.frame = CGRectMake(0, 0, 64, 54);
+    slideBg.frame = CGRectMake(0, 0, 64, 52);
     [BgScrollView addSubview:slideBg];
     NSMutableArray *tempButtons = [[NSMutableArray alloc] init];
 	for (int i = 0; i < 6; i++) {
@@ -159,7 +159,7 @@
 	[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationDuration:0.20];
 	[UIView setAnimationDelegate:self];
-	slideBg.frame = CGRectMake(btn.frame.origin.x, 0.0, 64, 54);
+	slideBg.frame = CGRectMake(btn.frame.origin.x, 0.0, 64, 52);
 	[UIView commitAnimations];
     
     if (btn.tag==3) {

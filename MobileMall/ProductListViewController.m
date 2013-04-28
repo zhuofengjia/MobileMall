@@ -42,7 +42,7 @@
 }
 
 
-//测试数据
+//-------------------------测试数据-----------------------
 -(void)setMyTestArr{
     ProductObject *pro1=[[ProductObject alloc]init];
     pro1.imageUrl=@"ad11.png";

@@ -49,7 +49,8 @@
 }
 
 -(void)layoutMyMainTable{
-    UITableView *mainTable=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, MY_HEIGHT-44-54-20)];
+    UITableView *mainTable=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, MY_HEIGHT-44-52-20)];
+    
     mainTable.delegate=self;
     mainTable.dataSource=self;
     [self.view addSubview:mainTable];

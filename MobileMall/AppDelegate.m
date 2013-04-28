@@ -13,6 +13,7 @@
 #import "ShoppingCartViewController.h"
 #import "MeCenterViewController.h"
 #import "MoreViewController.h"
+#import "LoginViewController.h"
 #import "UINavigationBar+Customized.h"
 #import "JSBadgeView.h"
 
@@ -29,6 +30,7 @@
 @implementation AppDelegate
 @synthesize myTabBar;
 @synthesize myFilter;
+@synthesize loginNav;
 
 - (void)dealloc
 {
@@ -143,7 +145,7 @@
     [myFilter setVisible:NO];
     [self.window addSubview:myTabBar.view];
     
-    [self addBadgeOnTabBar:3];
+    //[self addBadgeOnTabBar:3];
 }
 
 - (void)makeRightViewVisible {
@@ -155,6 +157,13 @@
 }
 
 -(void)addBadgeOnTabBar:(int)badges{
+    UIButton *tempBut=(UIButton *)[myTabBar.buttons objectAtIndex:3];
+    
+    JSBadgeView *oldbadgeView=(JSBadgeView *)[tempBut viewWithTag:10086];
+    if (oldbadgeView) {
+        [oldbadgeView removeFromSuperview];
+    }
+    
     CGFloat viewWidth = self.window.frame.size.width;
     
     NSUInteger numberOfSquaresPerRow = floor(viewWidth / (kSquareSideLength + kMarginBetweenSquares));
@@ -182,13 +191,35 @@
     rectangle.layer.shadowRadius = 1.0;
     rectangle.layer.shadowPath = rectangleShadowPath;
     
-    JSBadgeView *badgeView = [[JSBadgeView alloc] initWithParentView:rectangle alignment:JSBadgeViewAlignmentTopRight];
-    badgeView.badgeText = [NSString stringWithFormat:@"%d", badges];
     
-    UIButton *tempBut=(UIButton *)[myTabBar.buttons objectAtIndex:3];
+    JSBadgeView *badgeView = [[JSBadgeView alloc] initWithParentView:rectangle alignment:JSBadgeViewAlignmentTopRight];
+    badgeView.tag=10086;
+    //badgeView.badgeText = [NSString stringWithFormat:@"%d", shoppingNum];
+    
+    shoppingNum=shoppingNum+badges;
+    badgeView.badgeText=[NSString stringWithFormat:@"%d", shoppingNum];
+    
+    //UIButton *tempBut=(UIButton *)[myTabBar.buttons objectAtIndex:3];
     [tempBut addSubview:badgeView];
     [badgeView release];
     TT_RELEASE_SAFELY(rectangle);
+    
+}
+
+#pragma mark LoginVCController
+-(void)addLoginViewController{
+    if (!loginNav) {
+        LoginViewController *myLogin=[[LoginViewController alloc]init];
+        loginNav=[[UINavigationController alloc]initWithRootViewController:myLogin];
+        [myLogin release];
+    }
+    [loginNav popViewControllerAnimated:YES];
+    //[myTabBar presentModalViewController:loginNav animated:YES];
+    [myTabBar presentViewController:loginNav animated:YES completion:nil];
+}
+
+-(BOOL)checkIfLogin{
+    return NO;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -7,6 +7,7 @@
 //
 
 #import "MoreViewController.h"
+#import "SiteViewController.h"
 
 @interface MoreViewController ()
 
@@ -99,6 +100,37 @@
     
     return cell;
 }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.row) {
+        case 0:
+        {
+            SiteViewController *mySet=[[SiteViewController alloc]init];
+            [self.navigationController  pushViewController:mySet animated:NO];
+            [mySet release];
+        }
+            break;
+        case 1:
+            
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+        case 4:
+            
+            break;
+        case 5:
+            
+            break;
+        default:
+            break;
+    }
+}
+
 #pragma mark end
 
 - (void)didReceiveMemoryWarning
