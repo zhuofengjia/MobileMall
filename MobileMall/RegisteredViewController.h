@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegisteredViewController : UIViewController
+@interface RegisteredViewController : UIViewController<UIScrollViewDelegate,UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource>{
+    UIScrollView *bgView;
+    UITextField *accountFld;
+    UITextField *passwordFld;
+    UITextField *againFld;
+    UITextField *phoneFld;
+    UITextField *verificationFld;
+}
 
 @end

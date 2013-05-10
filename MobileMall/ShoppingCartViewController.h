@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShoppingCartViewController : UIViewController
-
+@interface ShoppingCartViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
+    NSMutableArray *cartArr;
+    UITableView *cartTable;
+    UIButton *leftBtn;
+    BOOL isEditing;
+    int totalNumber;
+    float totalDiscount;
+    float totalPrice;
+}
+-(void)layoutMyNavView;
+-(void)layoutMyNothingView;
+-(void)layoutMyMainTableView;
 @end

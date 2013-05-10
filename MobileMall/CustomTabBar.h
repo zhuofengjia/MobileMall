@@ -19,6 +19,8 @@
     UIImageView *rightArrow;
     
     BOOL ishidden;
+    
+    BOOL isLock;
 }
 @property(nonatomic,retain) UIView *tempView;
 @property(nonatomic,retain) UIScrollView *BgScrollView;
@@ -28,6 +30,7 @@
 
 @property(nonatomic,retain)UIImageView *imgView;
 @property(nonatomic,retain)UIImageView *slideBg;
+@property(nonatomic,assign)BOOL isLock;;
 
 - (void)hideRealTabBar;
 - (void)customTabBar;

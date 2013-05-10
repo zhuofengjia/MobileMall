@@ -48,7 +48,7 @@
 }
 
 
-+ (void)drawMyLabelInView:(UIView *)mainView Frame:(CGRect)frame Font:(UIFont *)font Text:(NSString *)text Color:(UIColor *)color {
++ (void)drawMyLabelInView:(UIView *)mainView Frame:(CGRect)frame Font:(UIFont *)font Text:(NSString *)text Color:(UIColor *)color{
 	UILabel *lb = [[[UILabel alloc] initWithFrame:frame] autorelease];
     lb.backgroundColor = [UIColor clearColor];
 	lb.font = font;
@@ -74,6 +74,7 @@
 	
 	lb.textAlignment = NSTextAlignmentCenter;
     lb.textColor=aColor;
+    lb.tag=buttonTag+100;
 	btn.tag=buttonTag;
     
     return btn;

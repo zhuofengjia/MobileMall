@@ -37,7 +37,7 @@
         textLabel=[[UILabel alloc]initWithFrame:CGRectMake(5, 98, 90, 18)];
         textLabel.backgroundColor=[UIColor clearColor];
         textLabel.font=[UIFont systemFontOfSize:14];
-        textLabel.textColor=[UIColor redColor];
+        textLabel.textColor=[UIColor colorWithRed:207.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
         textLabel.textAlignment=NSTextAlignmentCenter;
         textLabel.text=@"￥1020.00";
         [self.contentView addSubview:textLabel];

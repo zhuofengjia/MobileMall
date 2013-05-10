@@ -9,6 +9,8 @@
 #import "MeCenterViewController.h"
 #import "MyCollectViewController.h"
 #import "EGOImageView.h"
+#import "MyIntegrationViewController.h"
+#import "MyOrdersViewController.h"
 
 @interface MeCenterViewController ()
 
@@ -163,12 +165,16 @@
     switch (indexPath.row) {
         case 0:
         {
-        
+            MyOrdersViewController *myOrders=[[MyOrdersViewController alloc]init];
+            [self.navigationController pushViewController:myOrders animated:YES];
+            [myOrders release];
         }
             break;
         case 1:
         {
-            
+            MyIntegrationViewController *myIntegral=[[MyIntegrationViewController alloc]init];
+            [self.navigationController pushViewController:myIntegral animated:YES];
+            [myIntegral release];
         }
             break;
         case 2:
@@ -205,7 +211,7 @@
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
-    //self.navigationController.navigationBar.hidden=NO;
+    self.navigationController.navigationBar.hidden=NO;
 //    AppDelegate *app=(AppDelegate *)[[UIApplication sharedApplication]delegate];
 //    [app.myTabBar show];
 }

@@ -42,43 +42,43 @@
     ProductObject *pro1=[[ProductObject alloc]init];
     pro1.imageUrl=@"ad11.png";
     pro1.name=@"五粮醇红淡雅50度 五粮醇红淡雅500ml";
-    pro1.price=@"￥1020.0";
+    pro1.price=1020.0;
     pro1.sales=@"售出188";
     
     ProductObject *pro2=[[ProductObject alloc]init];
     pro2.imageUrl=@"ad12.png";
     pro2.name=@"茅台贵州王金樽典藏8年辉煌500ml";
-    pro2.price=@"￥820.0";
+    pro2.price=820.0;
     pro2.sales=@"售出282";
     
     ProductObject *pro3=[[ProductObject alloc]init];
     pro3.imageUrl=@"ad13.png";
     pro3.name=@"东方特雕陶瓷原装黄酒";
-    pro3.price=@"￥120.0";
+    pro3.price=120.0;
     pro3.sales=@"售出764";
     
     ProductObject *pro4=[[ProductObject alloc]init];
     pro4.imageUrl=@"ad14.png";
     pro4.name=@"张裕特制三鞭酒500ml";
-    pro4.price=@"￥90.0";
+    pro4.price=90.0;
     pro4.sales=@"售出998";
     
     ProductObject *pro5=[[ProductObject alloc]init];
     pro5.imageUrl=@"ad15.png";
     pro5.name=@"剑南春10年窖藏典藏尊贵版500ml";
-    pro5.price=@"￥770.0";
+    pro5.price=770.0;
     pro5.sales=@"售出180";
     
     ProductObject *pro6=[[ProductObject alloc]init];
     pro6.imageUrl=@"ad16.png";
     pro6.name=@"杏花村汾酒12年经典窖藏500ml";
-    pro6.price=@"￥980.0";
+    pro6.price=980.0;
     pro6.sales=@"售出220";
     
     ProductObject *pro7=[[ProductObject alloc]init];
     pro7.imageUrl=@"ad17.png";
     pro7.name=@"洋河蓝色经典梦之蓝精品典藏版500ml";
-    pro7.price=@"￥1000.0";
+    pro7.price=1000.0;
     pro7.sales=@"售出1718";
     
     collectArr=[[NSMutableArray alloc]initWithObjects:pro1,pro2,pro3,pro4,pro5,pro6,pro7, nil];
@@ -159,7 +159,7 @@
         priceLab=[[UILabel alloc]initWithFrame:CGRectMake(100, 44, 190, 18)];
         priceLab.tag=703;
         priceLab.backgroundColor=[UIColor clearColor];
-        priceLab.textColor=[UIColor redColor];
+        priceLab.textColor=[UIColor colorWithRed:207.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
         priceLab.font=[UIFont systemFontOfSize:16];
         [cell.contentView addSubview:priceLab];
         [priceLab release];
@@ -191,7 +191,7 @@
     ProductObject *aObj=(ProductObject *)[collectArr objectAtIndex:indexPath.row];
     proView.image=[UIImage imageNamed:aObj.imageUrl];
     nameLab.text=aObj.name;
-    priceLab.text=aObj.price;
+    priceLab.text=[NSString stringWithFormat:@"￥%.1f",aObj.price];
     
     return cell;
 }
@@ -227,13 +227,15 @@
     AppDelegate *myApp=(AppDelegate *)[[UIApplication sharedApplication] delegate];
     myApp.myTabBar.imgView.image=[UIImage imageNamed:@"TabBar_BGwhite.png"];
     myApp.myTabBar.slideBg.image=[UIImage imageNamed:@"TabBar_presswhite.png"];
+    myApp.myTabBar.isLock=YES;
+    
 }
 
 
 -(void)viewWillDisappear:(BOOL)animated{
     //self.navigationController.navigationBar.hidden=NO;
-//    AppDelegate *app=(AppDelegate *)[[UIApplication sharedApplication]delegate];
-//    [app.myTabBar show];
+    AppDelegate *app=(AppDelegate *)[[UIApplication sharedApplication]delegate];
+    app.myTabBar.isLock=NO;
 }
 
 - (void)didReceiveMemoryWarning

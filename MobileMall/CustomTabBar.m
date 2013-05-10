@@ -22,6 +22,8 @@
 @synthesize imgView;
 @synthesize slideBg;
 
+@synthesize isLock;
+
 - (void)viewDidAppear:(BOOL)animated{
     
 }
@@ -31,6 +33,8 @@
     slideBg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TabBar_press.png"]];
     
     [self hideRealTabBar];
+    
+    //NSLog(@"系统tabBar-----------%f============%f",self.view.frame.size.width,self.view.frame.size.height);
 
     [super viewDidLoad];
 }
@@ -144,6 +148,9 @@
 
 //箭头滑动动画的实现
 - (void)slideTabBg:(UIButton *)btn{
+    if (isLock) {
+        return;
+    }
     
     UIButton *lastBtn = [self.buttons objectAtIndex:self.currentSelectedIndex];
     [lastBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"TabBar_%d_normal.png",self.currentSelectedIndex]] forState:UIControlStateNormal];
@@ -161,14 +168,15 @@
 	[UIView setAnimationDelegate:self];
 	slideBg.frame = CGRectMake(btn.frame.origin.x, 0.0, 64, 52);
 	[UIView commitAnimations];
-    
-    if (btn.tag==3) {
-        if ([btn.subviews count]>=2) {
-            JSBadgeView *tempBadge=[btn.subviews objectAtIndex:1];
-            [tempBadge removeFromSuperview];
-        }
-        
-    }
+ 
+    //去掉购物车上的数字
+//    if (btn.tag==3) {
+//        if ([btn.subviews count]>=2) {
+//            JSBadgeView *tempBadge=[btn.subviews objectAtIndex:1];
+//            [tempBadge removeFromSuperview];
+//        }
+//        
+//    }
 }
 
 #pragma mark UIScrollViewDelegate

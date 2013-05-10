@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "UIColumnViewCell.h"
 #import "MyCollectViewController.h"
+#import "BrandWineViewController.h"
 
 #define WIDTH_OF_IMAGE 320
 #define HEIGHT_OF_IMAGE 128
@@ -105,7 +106,7 @@
     [telLab release];
     
     UIButton *cancelBtn=[UIButton buttonWithType:UIButtonTypeCustom];
-    [cancelBtn setBackgroundImage:[UIImage imageNamed:@"myPhoneBtn.png"] forState:UIControlStateNormal];
+    [cancelBtn setBackgroundImage:[UIImage imageNamed:@"startPhoneBtn.png"] forState:UIControlStateNormal];
     cancelBtn.frame=CGRectMake(50, 32, 95, 32);
     cancelBtn.titleLabel.font=[UIFont systemFontOfSize:14];
     [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
@@ -113,7 +114,7 @@
     [phongView addSubview:cancelBtn];
         
     UIButton *startBtn=[UIButton buttonWithType:UIButtonTypeCustom];
-    [startBtn setBackgroundImage:[UIImage imageNamed:@"myPhoneBtn.png"] forState:UIControlStateNormal];
+    [startBtn setBackgroundImage:[UIImage imageNamed:@"startPhoneBtn.png"] forState:UIControlStateNormal];
     startBtn.frame=CGRectMake(175, 32, 95, 32);
     startBtn.titleLabel.font=[UIFont systemFontOfSize:14];
     [startBtn setTitle:@"继续" forState:UIControlStateNormal];
@@ -340,6 +341,9 @@
             break;
         case 7:
             NSLog(@"去名酒品牌");
+            BrandWineViewController *mybrand=[[BrandWineViewController alloc]init];
+            [self.navigationController pushViewController:mybrand animated:YES];
+            [mybrand release];
             break;
             
         default:

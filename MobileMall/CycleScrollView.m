@@ -37,7 +37,6 @@
         [self addSubview:scrollView];
         
         
-        
         // pageControl=[[UIPageControl alloc] initWithFrame:CGRectMake(0, 116, frame.size.width, 28)];
         pageControl=[[UIPageControl alloc] initWithFrame:CGRectMake(0, 120, 320, 28)];
         NSString *tempVersion = [[UIDevice currentDevice] systemVersion];
@@ -118,19 +117,6 @@
     
     [self getDisplayImagesWithCurpage:curPage];
     
-    //    UIImage*preImage=[curImages objectAtIndex:0];
-    //    
-    //    UIImage*curImage=[curImages objectAtIndex:1];
-    //    
-    //    UIImage*lastImage=[curImages objectAtIndex:2];
-    
-    //    UIImageView*preView=[[UIImageView alloc] initWithImage:preImage];
-    //
-    //  
-    //    
-    //    UIImageView*curView=[[UIImageView alloc] initWithImage:curImage];
-    //    
-    //    UIImageView*lastView=[[UIImageView alloc] initWithImage:lastImage];
     EGOImageView*preView=[[EGOImageView alloc] initWithPlaceholderImage:[UIImage imageNamed:mystartImg]];
     preView.frame=CGRectMake(0, 0, scrollView.frame.size.width, scrollView.frame.size.height);
     
@@ -140,15 +126,10 @@
     EGOImageView*lastView=[[EGOImageView alloc] initWithPlaceholderImage:[UIImage imageNamed:mystartImg]];
     lastView.frame=CGRectMake(0, 0, scrollView.frame.size.width, scrollView.frame.size.height);
     
-//    NSLog(@"111111111111%@",[curImages objectAtIndex:0]);
-//    NSLog(@"222222222222%@",[curImages objectAtIndex:1]);
-//    NSLog(@"333333333333%@",[curImages objectAtIndex:2]);
     preView.imageURL=[NSURL URLWithString:[curImages objectAtIndex:0]];
     curView.imageURL=[NSURL URLWithString:[curImages objectAtIndex:1]];
     lastView.imageURL=[NSURL URLWithString:[curImages objectAtIndex:2]];
-    //      NSLog(@"preView的位置是:%f,,%f",preView.bounds.origin.x,preView.bounds.origin.y);
-    //      NSLog(@"curView的位置是:%f,,%f",curView.bounds.origin.x,curView.bounds.origin.y);
-    //      NSLog(@"lastView的位置是:%f,,%f",lastView.bounds.origin.x,lastView.bounds.origin.y);
+
     [scrollView addSubview:preView];
     
     [scrollView addSubview:curView];

@@ -9,13 +9,12 @@
 #import "ProductObject.h"
 
 @implementation ProductObject
-@synthesize uid,imageUrl,name,price,sales,introduction;
+@synthesize uid,imageUrl,name,price,discount,sales,introduction,number;
 
 -(void)dealloc{
     TT_RELEASE_SAFELY(uid);
     TT_RELEASE_SAFELY(imageUrl);
     TT_RELEASE_SAFELY(name);
-    TT_RELEASE_SAFELY(price);
     TT_RELEASE_SAFELY(sales);
     TT_RELEASE_SAFELY(introduction);
     [super dealloc];

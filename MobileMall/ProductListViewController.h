@@ -27,4 +27,5 @@ typedef enum{
 -(void)layoutMySequenceBtn;    //排序按钮区的UI处理
 -(void)layoutMyTableView;
 -(void)setMyFilterStr:(NSString *)filterStr;       //FilterDelegate回调方法，可以用来传递筛选相关的字段
+-(void)toucCellhWithIndex:(int)aIndex withIndexPath:(NSIndexPath *)indexPath;    //代替原来的单元格点击触发的方法
 @end

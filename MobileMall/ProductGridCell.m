@@ -29,7 +29,7 @@
             
             priceLab[i]=[[UILabel alloc]initWithFrame:CGRectMake(imageX+5, imageY+150, 80, 20)];
             priceLab[i].backgroundColor=[UIColor clearColor];
-            priceLab[i].textColor=[UIColor redColor];
+            priceLab[i].textColor=[UIColor colorWithRed:207.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
             priceLab[i].font=[UIFont systemFontOfSize:18];
             [self.contentView addSubview:priceLab[i]];
             
@@ -74,7 +74,7 @@
         
         ProductObject *proObj=(ProductObject *)[aArr objectAtIndex:i];
         productView[i].image=[UIImage imageNamed:proObj.imageUrl];
-        priceLab[i].text=proObj.price;
+        priceLab[i].text=[NSString stringWithFormat:@"￥%.1f",proObj.price];
         salesLab[i].text=proObj.sales;
         
     }

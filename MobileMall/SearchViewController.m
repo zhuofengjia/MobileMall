@@ -254,6 +254,7 @@
     [UIView setAnimationDuration:0.30];
     //[UIView setAnimationDelegate:self];
     dynamicBtn.frame=CGRectMake(271, 8, 42, 29);
+    [UIView commitAnimations];
 }
 
 

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
-
+@interface LoginViewController : UIViewController<UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>{
+    UITextField *accountFld;
+    UITextField *passwordFld;
+    UITableView *loginTable;
+    UITableView *registTable;
+    UIScrollView *bgView;
+}
 @end

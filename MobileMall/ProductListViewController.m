@@ -8,10 +8,11 @@
 
 #import "ProductListViewController.h"
 #import "ProductObject.h"
+#import "ProductDetailsViewController.h"
 
 
 @interface ProductListViewController ()
-
+    
 @end
 
 @implementation ProductListViewController
@@ -47,43 +48,43 @@
     ProductObject *pro1=[[ProductObject alloc]init];
     pro1.imageUrl=@"ad11.png";
     pro1.name=@"五粮醇红淡雅50度 五粮醇红淡雅500ml";
-    pro1.price=@"￥1020.0";
+    pro1.price=1020.0;
     pro1.sales=@"售出188";
     
     ProductObject *pro2=[[ProductObject alloc]init];
     pro2.imageUrl=@"ad12.png";
     pro2.name=@"茅台贵州王金樽典藏8年辉煌500ml";
-    pro2.price=@"￥820.0";
+    pro2.price=820.0;
     pro2.sales=@"售出282";
     
     ProductObject *pro3=[[ProductObject alloc]init];
     pro3.imageUrl=@"ad13.png";
     pro3.name=@"东方特雕陶瓷原装黄酒";
-    pro3.price=@"￥120.0";
+    pro3.price=120.0;
     pro3.sales=@"售出764";
     
     ProductObject *pro4=[[ProductObject alloc]init];
     pro4.imageUrl=@"ad14.png";
     pro4.name=@"张裕特制三鞭酒500ml";
-    pro4.price=@"￥90.0";
+    pro4.price=90.0;
     pro4.sales=@"售出998";
     
     ProductObject *pro5=[[ProductObject alloc]init];
     pro5.imageUrl=@"ad15.png";
     pro5.name=@"剑南春10年窖藏典藏尊贵版500ml";
-    pro5.price=@"￥770.0";
+    pro5.price=770.0;
     pro5.sales=@"售出180";
     
     ProductObject *pro6=[[ProductObject alloc]init];
     pro6.imageUrl=@"ad16.png";
     pro6.name=@"杏花村汾酒12年经典窖藏500ml";
-    pro6.price=@"￥980.0";
+    pro6.price=980.0;
     pro6.sales=@"售出220";
     
     ProductObject *pro7=[[ProductObject alloc]init];
     pro7.imageUrl=@"ad17.png";
     pro7.name=@"洋河蓝色经典梦之蓝精品典藏版500ml";
-    pro7.price=@"￥1000.0";
+    pro7.price=1000.0;
     pro7.sales=@"售出1718";
     
     ProArr=[[NSMutableArray alloc]initWithObjects:pro1,pro2,pro3,pro4,pro5,pro6,pro7, nil];
@@ -126,8 +127,8 @@
     [self.view addSubview:numberLab];
     [numberLab release];
     
-    UIButton *canceledBtn=[ComponentsFactory buttonWithType:UIButtonTypeCustom title:@"筛选" frame:CGRectMake(273, 7, 42, 30) imageName:@"allRight.png" tappedImageName:@"allRight.png" target:self action:@selector(doMyFilter) tag:101];
-    [self.view addSubview:canceledBtn];
+    UIButton *rightBtn=[ComponentsFactory buttonWithType:UIButtonTypeCustom title:@"筛选" frame:CGRectMake(273, 7, 42, 30) imageName:@"allRight.png" tappedImageName:@"allRight.png" target:self action:@selector(doMyFilter) tag:101];
+    [self.view addSubview:rightBtn];
     
     UIButton *leftBtn=[ComponentsFactory drawStringInMyButtonWithFrame:CGRectMake(10, 7, 45, 30) IconName:@"allLeft.png" Target:self Action:@selector(goBack) ButtonTag:102 TitleString:@"返回" StringFont:12 IsBold:YES Color:[UIColor whiteColor]];
     [self.view addSubview:leftBtn];
@@ -145,7 +146,7 @@
     [self.view addSubview:selectBgView];
     [selectBgView release];
     
-    UIButton *selectBtn1=[ComponentsFactory drawSelectStringInMyButtonWithFrame:CGRectMake(0, 49, 80, 30) IconName:@"searchHistory.png" Target:self Action:@selector(doMySequence:) ButtonTag:501 TitleString:@"销量" StringFont:14 IsBold:NO Color:[UIColor redColor]];
+    UIButton *selectBtn1=[ComponentsFactory drawSelectStringInMyButtonWithFrame:CGRectMake(0, 49, 80, 30) IconName:@"searchHistory.png" Target:self Action:@selector(doMySequence:) ButtonTag:501 TitleString:@"销量" StringFont:14 IsBold:NO Color:[UIColor colorWithRed:207.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0]];
     [self.view addSubview:selectBtn1];
     
     UIButton *selectBtn2=[ComponentsFactory drawSelectStringInMyButtonWithFrame:CGRectMake(80, 49, 80, 30) IconName:@"" Target:self Action:@selector(doMySequence:) ButtonTag:502 TitleString:@"新品" StringFont:14 IsBold:NO Color:[UIColor blackColor]];
@@ -227,21 +228,21 @@
         case 501:{
             [myBtn setImage:[UIImage imageNamed:@"searchHistory.png"] forState:UIControlStateNormal];
             UILabel *aLab=(UILabel *)[myBtn viewWithTag:601];
-            aLab.textColor=[UIColor redColor];
+            aLab.textColor=[UIColor colorWithRed:207.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
             myType=Sequence_Sales;
         }
             break;
         case 502:{
             [myBtn setImage:[UIImage imageNamed:@"searchHistory.png"] forState:UIControlStateNormal];
             UILabel *aLab=(UILabel *)[myBtn viewWithTag:602];
-            aLab.textColor=[UIColor redColor];
+            aLab.textColor=[UIColor colorWithRed:207.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
             myType=Sequence_New;
         }
             break;
         case 503:{
             [myBtn setImage:[UIImage imageNamed:@"searchHistory.png"] forState:UIControlStateNormal];
             UILabel *aLab=(UILabel *)[myBtn viewWithTag:603];
-            aLab.textColor=[UIColor redColor];
+            aLab.textColor=[UIColor colorWithRed:207.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
             UIImageView *myArrow=(UIImageView *)[myBtn viewWithTag:703];
             if (myType==Sequence_PriceUp) {
                 [myArrow setImage:[UIImage imageNamed:@"arrowDown.png"]];
@@ -255,7 +256,7 @@
         case 504:{
             [myBtn setImage:[UIImage imageNamed:@"searchHistory.png"] forState:UIControlStateNormal];
             UILabel *aLab=(UILabel *)[myBtn viewWithTag:604];
-            aLab.textColor=[UIColor redColor];
+            aLab.textColor=[UIColor colorWithRed:207.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
             myType=Sequence_Assess;
         }
             break;
@@ -361,7 +362,23 @@
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (tableView.tag==882) {
+        ProductDetailsViewController *myDeatail=[[ProductDetailsViewController alloc]init];
+        [self.navigationController pushViewController:myDeatail animated:YES];
+        [myDeatail release];
+    }
+}
+
+
 #pragma mark  end
+
+#pragma mark GridDelegate
+-(void)toucCellhWithIndex:(int)aIndex withIndexPath:(NSIndexPath *)indexPath{
+    ProductDetailsViewController *myDeatail=[[ProductDetailsViewController alloc]init];
+    [self.navigationController pushViewController:myDeatail animated:YES];
+    [myDeatail release];
+}
 
 //主界面向左滑动
 - (void)moveToLeftSide {
